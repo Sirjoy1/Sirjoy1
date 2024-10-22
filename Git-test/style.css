@@ -1,0 +1,114 @@
+/* style for desktop */
+@media only screen and {min-width: 1440px
+    
+}
+
+   
+   
+    
+}
+/*style for mobile */
+@media only screen { min-width: 370px;
+
+  
+}
+/* ........................................*/
+
+/* FONT */
+
+/*.........................................*/
+
+@font-face {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap; /* improves how fonts are loaded on the page */
+    src: url(<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">);
+}
+@font-face {
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap; /* improves how fonts are loaded on the page */
+    src: url(<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">);
+}
+
+/* ........................................*/
+
+/* BASE STYLES */
+
+/*.........................................*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* this specifys how a few properties like padding, margin take up space. very useful for grid ssystem */
+
+}
+* {
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    
+    margin: unset; /* unset is almost the same as 0 */
+    -webkit-text-size-adjust: none; /* this is to prevent zooming issues in IOS devices */
+    text-size-adjust: none;
+    background-color: rgb(233, 237, 238);
+    font-family:Outfits, sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center; /* centralizes all items including imgages*/
+  
+    
+}
+
+
+img {
+    max-width: 100%;
+    height: auto; 
+    /* this makes the image scale to the size of the screen */
+
+    border-radius: 0.5rem;
+   
+}
+
+/* ........................................*/
+
+/* QR CODE STYLE*/
+
+/*.........................................*/
+.main {
+    background-color: white;
+    position: absolute; 
+    /* the propert "position' set to absolute, adjust the value to move the title closer to the top  */
+    max-width: 320px;
+    border-radius: 1.35rem;
+     /* shapes the card to give a circular border*/
+
+    padding: 1.075rem 1.1rem 4rem ; 
+    /* important for giving space between img and top*/
+
+    box-shadow: 0 1.6rem 1.6rem;
+    text-align: center;
+    padding-top: 30px;
+    margin: 1.075rem; 
+  
+}
+h2 {
+    font-size: 1.175rem;
+    margin: 1.3rem;
+    line-height: 1.5rem;
+    color: rgb(4, 4, 75);
+}
+p {
+    line-height: 1.3;
+    color: #7b879d;
+    text-decoration-thickness: 0;
+}
